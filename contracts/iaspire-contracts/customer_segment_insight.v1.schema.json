@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "iaspire-contracts/customer_segment_insight/v1",
+  "title": "CUSTOMER_SEGMENT_INSIGHT v1",
+  "description": "Anchor 2 -> Anchor 3. Aggregated, cohort-thresholded only (Master §3.2). No individual may be identifiable.",
+  "type": "object",
+  "required": ["insight_id", "segment", "need", "pct", "cohort_size", "confidence"],
+  "additionalProperties": false,
+  "properties": {
+    "insight_id": { "type": "string", "pattern": "^csi_[a-z0-9_]{4,32}$" },
+    "segment": { "type": "string", "minLength": 1, "maxLength": 64 },
+    "need": {
+      "type": "string",
+      "enum": ["travel", "asset", "protection", "liquidity", "wealth", "debt"]
+    },
+    "pct": { "type": "number", "minimum": 0, "maximum": 100 },
+    "cohort_size": { "type": "integer", "minimum": 1 },
+    "confidence": { "type": "string", "enum": ["low", "moderate", "high"] },
+    "suppressed": {
+      "description": "True when cohort fell below the k-anonymity threshold and the record is retained only as a suppression marker.",
+      "type": "boolean"
+    },
+    "suppression_reason": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "suppressed": { "const": true } }, "required": ["suppressed"] },
+      "then": { "required": ["suppressed", "suppression_reason"] }
+    }
+  ]
+}

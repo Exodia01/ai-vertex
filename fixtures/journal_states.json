@@ -1,0 +1,30 @@
+{
+  "fixture": "journal_states",
+  "purpose": "One fixture per Anchor 1 §8 lifecycle stage, for J3 replay tests and Anchor 2 hand-off.",
+  "states": [
+    { "state": "raw_observation", "data_class": "observed_data", "actor": "customer", "example_payload": { "raw_text": "Dubai family trip 1.2L in 3 months" } },
+    { "state": "interpreted_expectation", "data_class": "ai_hypothesis", "actor": "ai", "example_payload": { "objective_category": "travel", "confidence": 0.9, "amount": 120000, "horizon_mo": 3 } },
+    { "state": "banking_equivalent", "data_class": "ai_hypothesis", "actor": "ai", "example_payload": { "candidates": [ { "mechanism": "savings goal", "required_capital": 120000, "horizon_mo": 3, "liquidity_need": "med", "financing_need": false, "is_stated": false } ] } },
+    { "state": "analysis", "data_class": "observed_data", "actor": "deterministic_engine", "example_payload": { "outcome": "feasible", "monthly_need": 40000.0, "avail_monthly": 82000.0, "computed_by": "deterministic_engine" } },
+    { "state": "challenge", "data_class": "ai_hypothesis", "actor": "ai", "example_payload": { "alternatives": [ { "type": "timeline", "description": "Extend horizon so need<=avail" } ], "nudge_count": 1 } },
+    { "state": "customer_response", "data_class": "customer_confirmed_data", "actor": "customer", "example_payload": { "response": "modify", "modified": { "timeline_mo": 8 } } },
+    { "state": "stabilized_state", "data_class": "customer_confirmed_data", "actor": "deterministic_engine", "example_payload": { "customer_ref": "cust_opaque_7f3a", "objective_category": "travel", "mechanism_category": "savings_goal", "feasibility_outcome": "feasible", "coarse_target_band": "0-1.5L", "coarse_timeline_band": "0-3mo", "confirmed_at": "2026-09-26T10:00:00Z", "state_version": "v1" } },
+    { "state": "monitoring", "data_class": "observed_data", "actor": "deterministic_engine", "example_payload": { "goal_id": "goal_001" } }
+  ],
+  "orthogonal_tags": {
+    "data_class": ["observed_data", "inferred_data", "ai_hypothesis", "customer_confirmed_data", "customer_rejected_interpretation"],
+    "aspiration_status": ["active", "completed", "abandoned"],
+    "state_scope": ["current_financial_state", "historical_state"]
+  },
+  "rejected_interpretation_case": {
+    "note": "J3 unit test requires the rejected-interpretation loop-back edge to be representable.",
+    "sequence": [
+      { "state": "interpreted_expectation", "data_class": "ai_hypothesis" },
+      { "state": "banking_equivalent", "data_class": "ai_hypothesis" },
+      { "state": "analysis", "data_class": "observed_data" },
+      { "state": "challenge", "data_class": "ai_hypothesis" },
+      { "state": "customer_response", "data_class": "customer_rejected_interpretation" },
+      { "state": "banking_equivalent", "data_class": "ai_hypothesis" }
+    ]
+  }
+}

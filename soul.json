@@ -1,0 +1,18 @@
+{
+  "persona_id": "persona_hostel_tier2",
+  "label": "Guest_44",
+  "city_tier": "tier2_city",
+  "work": "Hostel owner, ~2L/mo, seasonal (off-season dip ~1.1L, peak ~2.4L)",
+  "advisor": "Tax preparer only, no financial advisory",
+  "household": ["partner", "child (school fees June)", "elder parent (medicine ~4k/mo)"],
+  "goals": [
+    { "name": "Family trip Dec", "cost": 120000, "why": "first international trip, joy" },
+    { "name": "Hostel roof repair", "cost": 80000, "why": "monsoon leakage" },
+    { "name": "Emergency 6mo", "status": "4.5mo covered, need 1.5mo" }
+  ],
+  "fears": ["off-season cash crunch", "spending guilt", "missing lounge comfort on travel"],
+  "values": "Spend on family experiences freely if proof of safety. Hates random leaks.",
+  "vows": ["No food delivery on weekdays"],
+  "language": "Hinglish, friend-to-friend",
+  "travel": { "plan": "Family trip Dec", "route": "AAA-BBB-CCC", "layover": "3hr mid-hub", "card_now": "no lounge", "likes": "sofa, buffet, shower" }
+}

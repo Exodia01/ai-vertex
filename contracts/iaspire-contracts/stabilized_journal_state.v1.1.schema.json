@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "iaspire-contracts/stabilized_journal_state/v1.1",
+  "title": "STABILIZED_JOURNAL_STATE v1.1",
+  "description": "Additive, backward-compatible v1.1. Adds bucketed sentiment bands only (Anchor 1 §21 v1.1). Raw sentiment text, per-message scores and contradiction_note content MUST NOT appear.",
+  "type": "object",
+  "required": [
+    "customer_ref",
+    "objective_category",
+    "mechanism_category",
+    "feasibility_outcome",
+    "coarse_target_band",
+    "coarse_timeline_band",
+    "confirmed_at",
+    "state_version"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "customer_ref": {
+      "type": "string",
+      "pattern": "^cust_[a-z0-9_]{4,32}$"
+    },
+    "objective_category": {
+      "type": "string",
+      "enum": ["travel", "asset", "protection", "liquidity", "wealth", "debt"]
+    },
+    "mechanism_category": {
+      "type": "string",
+      "enum": [
+        "savings_goal",
+        "insurance_reserve",
+        "liquid_reserve",
+        "investment_allocation",
+        "auto_loan",
+        "emi",
+        "cash_purchase",
+        "downpayment_mortgage",
+        "refinance_repay"
+      ]
+    },
+    "feasibility_outcome": { "type": "string", "enum": ["feasible", "gap", "at-risk"] },
+    "coarse_target_band": { "type": "string", "pattern": "^(0-1\\.5L|1\\.5-5L|>5L)$" },
+    "coarse_timeline_band": { "type": "string", "pattern": "^(0-3mo|3-12mo|>12mo)$" },
+    "confirmed_at": { "type": "string", "format": "date-time" },
+    "state_version": { "type": "string", "pattern": "^v[0-9]+(\\.[0-9]+)?$" },
+    "coarse_sentiment_band": {
+      "description": "v1.1 additive. Bucketed category only - never a raw score.",
+      "type": "string",
+      "enum": ["low_stress", "moderate_stress", "high_stress"]
+    },
+    "confidence_band": {
+      "description": "v1.1 additive. Bucketed category only - never a raw score.",
+      "type": "string",
+      "enum": ["low_confidence", "moderate_confidence", "high_confidence"]
+    }
+  }
+}

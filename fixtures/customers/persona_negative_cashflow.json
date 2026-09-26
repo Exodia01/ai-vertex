@@ -1,0 +1,3534 @@
+{
+ "persona_id": "persona_negative_cashflow",
+ "label": "Guest_36",
+ "as_of": "2026-09-26",
+ "profile": {
+  "income_band": "low",
+  "life_stage": "single",
+  "risk_profile": "high",
+  "income_pattern": "flat",
+  "note": "J6 named case: negative cash flow (spend exceeds income)"
+ },
+ "accounts": {
+  "savings": {
+   "bank": "FixtureBank 36",
+   "balance": 5000
+  },
+  "fd": {
+   "balance": 0,
+   "rate": "7.1%"
+  },
+  "mf": {
+   "balance": 0
+  },
+  "debt": {
+   "balance": 410000,
+   "rate": "0.14"
+  },
+  "recurring_obligations": 38000
+ },
+ "consent_scope": [
+  "txn.read",
+  "bal.read",
+  "profile.read"
+ ],
+ "summary_3mo": {
+  "inflow_total": 210000,
+  "spend_total": 130631,
+  "random_leak": 97961,
+  "joy": 21769,
+  "top_leaks": [
+   {
+    "merchant": "essentials",
+    "total": 171594,
+    "count": 71
+   },
+   {
+    "merchant": "hostel_ops",
+    "total": 107162,
+    "count": 23
+   },
+   {
+    "merchant": "food_delivery",
+    "total": 56456,
+    "count": 84
+   }
+  ],
+  "travel_spend": 0,
+  "signals": [
+   "J6 named case: negative cash flow (spend exceeds income)"
+  ]
+ },
+ "transactions": [
+  {
+   "id": "txn_0001",
+   "date": "2025-04-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0002",
+   "date": "2025-04-27",
+   "amount": 655,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "15:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0003",
+   "date": "2025-04-15",
+   "amount": 595,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0004",
+   "date": "2025-04-27",
+   "amount": 8533,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0005",
+   "date": "2025-04-20",
+   "amount": 510,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0006",
+   "date": "2025-04-02",
+   "amount": 816,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0007",
+   "date": "2025-04-22",
+   "amount": 635,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0008",
+   "date": "2025-04-12",
+   "amount": 1538,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0009",
+   "date": "2025-04-21",
+   "amount": 1265,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0010",
+   "date": "2025-04-14",
+   "amount": 737,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0011",
+   "date": "2025-04-04",
+   "amount": 751,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0012",
+   "date": "2025-04-12",
+   "amount": 3212,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0013",
+   "date": "2025-04-18",
+   "amount": 705,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0014",
+   "date": "2025-04-14",
+   "amount": 956,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "card",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0015",
+   "date": "2025-04-28",
+   "amount": 1221,
+   "merchant": "ApparelCo",
+   "category": "shopping",
+   "channel": "card",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0016",
+   "date": "2025-04-28",
+   "amount": 685,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0017",
+   "date": "2025-04-12",
+   "amount": 3182,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0018",
+   "date": "2025-04-18",
+   "amount": 2170,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0019",
+   "date": "2025-04-05",
+   "amount": 699,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0020",
+   "date": "2025-04-12",
+   "amount": 1786,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0021",
+   "date": "2025-04-19",
+   "amount": 659,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0022",
+   "date": "2025-05-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0023",
+   "date": "2025-05-06",
+   "amount": 360,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0024",
+   "date": "2025-05-13",
+   "amount": 2887,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0025",
+   "date": "2025-05-06",
+   "amount": 183,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0026",
+   "date": "2025-05-26",
+   "amount": 1304,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0027",
+   "date": "2025-05-28",
+   "amount": 4994,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "UPI",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0028",
+   "date": "2025-05-26",
+   "amount": 1426,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0029",
+   "date": "2025-05-21",
+   "amount": 1570,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0030",
+   "date": "2025-05-20",
+   "amount": 2416,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0031",
+   "date": "2025-05-04",
+   "amount": 2975,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0032",
+   "date": "2025-05-23",
+   "amount": 762,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0033",
+   "date": "2025-05-09",
+   "amount": 468,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "15:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0034",
+   "date": "2025-05-17",
+   "amount": 836,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0035",
+   "date": "2025-05-27",
+   "amount": 788,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0036",
+   "date": "2025-05-05",
+   "amount": 2251,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0037",
+   "date": "2025-05-24",
+   "amount": 2940,
+   "merchant": "ApparelCo",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0038",
+   "date": "2025-05-17",
+   "amount": 497,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0039",
+   "date": "2025-05-25",
+   "amount": 2770,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0040",
+   "date": "2025-05-04",
+   "amount": 2027,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0041",
+   "date": "2025-05-21",
+   "amount": 365,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "card",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0042",
+   "date": "2025-05-26",
+   "amount": 715,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "card",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0043",
+   "date": "2025-05-25",
+   "amount": 661,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0044",
+   "date": "2025-05-11",
+   "amount": 375,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0045",
+   "date": "2025-06-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0046",
+   "date": "2025-06-15",
+   "amount": 707,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0047",
+   "date": "2025-06-15",
+   "amount": 499,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0048",
+   "date": "2025-06-12",
+   "amount": 207,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0049",
+   "date": "2025-06-27",
+   "amount": 284,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0050",
+   "date": "2025-06-23",
+   "amount": 223,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0051",
+   "date": "2025-06-19",
+   "amount": 2180,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "card",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0052",
+   "date": "2025-06-25",
+   "amount": 2771,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0053",
+   "date": "2025-06-08",
+   "amount": 341,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "card",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0054",
+   "date": "2025-06-11",
+   "amount": 947,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0055",
+   "date": "2025-06-11",
+   "amount": 2259,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "card",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0056",
+   "date": "2025-06-05",
+   "amount": 821,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0057",
+   "date": "2025-06-07",
+   "amount": 4002,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "card",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0058",
+   "date": "2025-06-03",
+   "amount": 870,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0059",
+   "date": "2025-06-24",
+   "amount": 1175,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "card",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0060",
+   "date": "2025-06-05",
+   "amount": 473,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0061",
+   "date": "2025-06-18",
+   "amount": 3299,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0062",
+   "date": "2025-06-09",
+   "amount": 1274,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "card",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0063",
+   "date": "2025-06-28",
+   "amount": 677,
+   "merchant": "StreamingBundle",
+   "category": "subscription",
+   "channel": "card",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0064",
+   "date": "2025-07-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0065",
+   "date": "2025-07-14",
+   "amount": 321,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0066",
+   "date": "2025-07-11",
+   "amount": 857,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0067",
+   "date": "2025-07-01",
+   "amount": 4630,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "card",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0068",
+   "date": "2025-07-23",
+   "amount": 485,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0069",
+   "date": "2025-07-07",
+   "amount": 871,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0070",
+   "date": "2025-07-24",
+   "amount": 1589,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0071",
+   "date": "2025-07-09",
+   "amount": 1643,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0072",
+   "date": "2025-07-17",
+   "amount": 1667,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0073",
+   "date": "2025-07-24",
+   "amount": 1210,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0074",
+   "date": "2025-07-15",
+   "amount": 1413,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0075",
+   "date": "2025-07-18",
+   "amount": 1383,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0076",
+   "date": "2025-07-18",
+   "amount": 3036,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0077",
+   "date": "2025-07-14",
+   "amount": 1607,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0078",
+   "date": "2025-07-14",
+   "amount": 5057,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "card",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0079",
+   "date": "2025-07-22",
+   "amount": 511,
+   "merchant": "StreamingBundle",
+   "category": "subscription",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0080",
+   "date": "2025-07-28",
+   "amount": 1227,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0081",
+   "date": "2025-07-02",
+   "amount": 1187,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0082",
+   "date": "2025-07-09",
+   "amount": 4954,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0083",
+   "date": "2025-07-17",
+   "amount": 1011,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "15:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0084",
+   "date": "2025-07-18",
+   "amount": 1976,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0085",
+   "date": "2025-08-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0086",
+   "date": "2025-08-03",
+   "amount": 2199,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0087",
+   "date": "2025-08-25",
+   "amount": 378,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0088",
+   "date": "2025-08-20",
+   "amount": 464,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0089",
+   "date": "2025-08-15",
+   "amount": 409,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0090",
+   "date": "2025-08-20",
+   "amount": 2096,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0091",
+   "date": "2025-08-20",
+   "amount": 4844,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0092",
+   "date": "2025-08-19",
+   "amount": 825,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0093",
+   "date": "2025-08-26",
+   "amount": 1846,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0094",
+   "date": "2025-08-26",
+   "amount": 593,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0095",
+   "date": "2025-08-08",
+   "amount": 3354,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0096",
+   "date": "2025-08-07",
+   "amount": 312,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0097",
+   "date": "2025-08-19",
+   "amount": 699,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0098",
+   "date": "2025-08-03",
+   "amount": 757,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0099",
+   "date": "2025-08-07",
+   "amount": 308,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0100",
+   "date": "2025-08-26",
+   "amount": 513,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "card",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0101",
+   "date": "2025-08-21",
+   "amount": 656,
+   "merchant": "ApparelCo",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0102",
+   "date": "2025-09-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0103",
+   "date": "2025-09-07",
+   "amount": 666,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0104",
+   "date": "2025-09-18",
+   "amount": 771,
+   "merchant": "StreamingBundle",
+   "category": "subscription",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0105",
+   "date": "2025-09-07",
+   "amount": 1705,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0106",
+   "date": "2025-09-28",
+   "amount": 736,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0107",
+   "date": "2025-09-18",
+   "amount": 2487,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0108",
+   "date": "2025-09-06",
+   "amount": 2754,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0109",
+   "date": "2025-09-14",
+   "amount": 2826,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0110",
+   "date": "2025-09-11",
+   "amount": 2542,
+   "merchant": "ApparelCo",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0111",
+   "date": "2025-09-10",
+   "amount": 757,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0112",
+   "date": "2025-09-20",
+   "amount": 2486,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0113",
+   "date": "2025-09-01",
+   "amount": 841,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0114",
+   "date": "2025-09-27",
+   "amount": 2914,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0115",
+   "date": "2025-09-11",
+   "amount": 925,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0116",
+   "date": "2025-09-23",
+   "amount": 295,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0117",
+   "date": "2025-09-26",
+   "amount": 2548,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0118",
+   "date": "2025-09-19",
+   "amount": 928,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0119",
+   "date": "2025-09-11",
+   "amount": 1121,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "card",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0120",
+   "date": "2025-09-28",
+   "amount": 1625,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0121",
+   "date": "2025-09-11",
+   "amount": 405,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "card",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0122",
+   "date": "2025-10-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0123",
+   "date": "2025-10-06",
+   "amount": 466,
+   "merchant": "StreamingBundle",
+   "category": "subscription",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0124",
+   "date": "2025-10-12",
+   "amount": 569,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0125",
+   "date": "2025-10-01",
+   "amount": 714,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "UPI",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0126",
+   "date": "2025-10-05",
+   "amount": 1416,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "card",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0127",
+   "date": "2025-10-09",
+   "amount": 330,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0128",
+   "date": "2025-10-01",
+   "amount": 3401,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0129",
+   "date": "2025-10-18",
+   "amount": 4307,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "card",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0130",
+   "date": "2025-10-14",
+   "amount": 540,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0131",
+   "date": "2025-10-19",
+   "amount": 521,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0132",
+   "date": "2025-10-11",
+   "amount": 1584,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0133",
+   "date": "2025-10-18",
+   "amount": 2135,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "card",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0134",
+   "date": "2025-10-19",
+   "amount": 1115,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0135",
+   "date": "2025-10-13",
+   "amount": 4632,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0136",
+   "date": "2025-10-01",
+   "amount": 7852,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "card",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0137",
+   "date": "2025-10-03",
+   "amount": 3432,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "15:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0138",
+   "date": "2025-10-27",
+   "amount": 2487,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0139",
+   "date": "2025-10-27",
+   "amount": 4207,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "card",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0140",
+   "date": "2025-11-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0141",
+   "date": "2025-11-13",
+   "amount": 1328,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0142",
+   "date": "2025-11-13",
+   "amount": 775,
+   "merchant": "StreamingBundle",
+   "category": "subscription",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0143",
+   "date": "2025-11-02",
+   "amount": 491,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0144",
+   "date": "2025-11-12",
+   "amount": 1707,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "15:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0145",
+   "date": "2025-11-12",
+   "amount": 134,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0146",
+   "date": "2025-11-23",
+   "amount": 1339,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "UPI",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0147",
+   "date": "2025-11-04",
+   "amount": 1632,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0148",
+   "date": "2025-11-12",
+   "amount": 8078,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "card",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0149",
+   "date": "2025-11-06",
+   "amount": 580,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0150",
+   "date": "2025-11-27",
+   "amount": 3965,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0151",
+   "date": "2025-11-17",
+   "amount": 2380,
+   "merchant": "ApparelCo",
+   "category": "shopping",
+   "channel": "card",
+   "time": "15:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0152",
+   "date": "2025-11-19",
+   "amount": 672,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0153",
+   "date": "2025-11-09",
+   "amount": 1523,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0154",
+   "date": "2025-11-21",
+   "amount": 2699,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0155",
+   "date": "2025-11-01",
+   "amount": 371,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0156",
+   "date": "2025-12-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0157",
+   "date": "2025-12-18",
+   "amount": 694,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0158",
+   "date": "2025-12-28",
+   "amount": 7464,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "UPI",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0159",
+   "date": "2025-12-24",
+   "amount": 4234,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "card",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0160",
+   "date": "2025-12-10",
+   "amount": 648,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0161",
+   "date": "2025-12-11",
+   "amount": 7282,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0162",
+   "date": "2025-12-20",
+   "amount": 440,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0163",
+   "date": "2025-12-03",
+   "amount": 1074,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0164",
+   "date": "2025-12-28",
+   "amount": 6205,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0165",
+   "date": "2025-12-01",
+   "amount": 688,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0166",
+   "date": "2025-12-06",
+   "amount": 2065,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0167",
+   "date": "2025-12-11",
+   "amount": 395,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0168",
+   "date": "2025-12-28",
+   "amount": 454,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0169",
+   "date": "2025-12-18",
+   "amount": 8349,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "15:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0170",
+   "date": "2025-12-19",
+   "amount": 598,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0171",
+   "date": "2025-12-08",
+   "amount": 1741,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0172",
+   "date": "2026-01-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0173",
+   "date": "2026-01-05",
+   "amount": 665,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0174",
+   "date": "2026-01-01",
+   "amount": 3361,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0175",
+   "date": "2026-01-22",
+   "amount": 802,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0176",
+   "date": "2026-01-27",
+   "amount": 3278,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "card",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0177",
+   "date": "2026-01-26",
+   "amount": 1186,
+   "merchant": "ApparelCo",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0178",
+   "date": "2026-01-27",
+   "amount": 1900,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0179",
+   "date": "2026-01-11",
+   "amount": 472,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0180",
+   "date": "2026-01-08",
+   "amount": 928,
+   "merchant": "ApparelCo",
+   "category": "shopping",
+   "channel": "card",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0181",
+   "date": "2026-01-02",
+   "amount": 876,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "card",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0182",
+   "date": "2026-01-18",
+   "amount": 606,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0183",
+   "date": "2026-01-03",
+   "amount": 2473,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0184",
+   "date": "2026-01-28",
+   "amount": 823,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "card",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0185",
+   "date": "2026-01-13",
+   "amount": 2145,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0186",
+   "date": "2026-01-20",
+   "amount": 3900,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "card",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0187",
+   "date": "2026-01-15",
+   "amount": 2179,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "card",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0188",
+   "date": "2026-01-17",
+   "amount": 3094,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0189",
+   "date": "2026-01-14",
+   "amount": 430,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0190",
+   "date": "2026-01-24",
+   "amount": 240,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0191",
+   "date": "2026-01-16",
+   "amount": 3052,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0192",
+   "date": "2026-02-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0193",
+   "date": "2026-02-13",
+   "amount": 408,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0194",
+   "date": "2026-02-23",
+   "amount": 979,
+   "merchant": "StreamingBundle",
+   "category": "subscription",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0195",
+   "date": "2026-02-06",
+   "amount": 609,
+   "merchant": "StreamingBundle",
+   "category": "subscription",
+   "channel": "UPI",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0196",
+   "date": "2026-02-04",
+   "amount": 1747,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0197",
+   "date": "2026-02-13",
+   "amount": 314,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0198",
+   "date": "2026-02-27",
+   "amount": 889,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0199",
+   "date": "2026-02-04",
+   "amount": 477,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0200",
+   "date": "2026-02-22",
+   "amount": 2754,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0201",
+   "date": "2026-02-23",
+   "amount": 2214,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0202",
+   "date": "2026-02-13",
+   "amount": 303,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0203",
+   "date": "2026-02-22",
+   "amount": 153,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0204",
+   "date": "2026-02-01",
+   "amount": 4439,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0205",
+   "date": "2026-02-02",
+   "amount": 1046,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "card",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0206",
+   "date": "2026-02-12",
+   "amount": 474,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "card",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0207",
+   "date": "2026-02-10",
+   "amount": 3597,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0208",
+   "date": "2026-02-20",
+   "amount": 833,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0209",
+   "date": "2026-02-15",
+   "amount": 3470,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0210",
+   "date": "2026-02-08",
+   "amount": 1178,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "card",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0211",
+   "date": "2026-02-04",
+   "amount": 6553,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "card",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0212",
+   "date": "2026-02-14",
+   "amount": 2657,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0213",
+   "date": "2026-02-04",
+   "amount": 3664,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0214",
+   "date": "2026-03-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0215",
+   "date": "2026-03-21",
+   "amount": 603,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0216",
+   "date": "2026-03-02",
+   "amount": 1872,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0217",
+   "date": "2026-03-20",
+   "amount": 1876,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0218",
+   "date": "2026-03-08",
+   "amount": 875,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0219",
+   "date": "2026-03-17",
+   "amount": 2032,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0220",
+   "date": "2026-03-09",
+   "amount": 335,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0221",
+   "date": "2026-03-13",
+   "amount": 233,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0222",
+   "date": "2026-03-18",
+   "amount": 2433,
+   "merchant": "ApparelCo",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0223",
+   "date": "2026-03-02",
+   "amount": 332,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0224",
+   "date": "2026-03-21",
+   "amount": 605,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "card",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0225",
+   "date": "2026-03-19",
+   "amount": 2229,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0226",
+   "date": "2026-03-28",
+   "amount": 2254,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0227",
+   "date": "2026-03-06",
+   "amount": 1411,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0228",
+   "date": "2026-03-04",
+   "amount": 1214,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0229",
+   "date": "2026-03-03",
+   "amount": 503,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0230",
+   "date": "2026-03-19",
+   "amount": 823,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "card",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0231",
+   "date": "2026-03-10",
+   "amount": 458,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0232",
+   "date": "2026-03-15",
+   "amount": 3338,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "card",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0233",
+   "date": "2026-03-21",
+   "amount": 1629,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "UPI",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0234",
+   "date": "2026-03-10",
+   "amount": 2752,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0235",
+   "date": "2026-03-01",
+   "amount": 327,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0236",
+   "date": "2026-03-14",
+   "amount": 690,
+   "merchant": "StreamingBundle",
+   "category": "subscription",
+   "channel": "card",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0237",
+   "date": "2026-04-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0238",
+   "date": "2026-04-05",
+   "amount": 2099,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0239",
+   "date": "2026-04-12",
+   "amount": 763,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0240",
+   "date": "2026-04-21",
+   "amount": 820,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0241",
+   "date": "2026-04-18",
+   "amount": 2442,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0242",
+   "date": "2026-04-27",
+   "amount": 802,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0243",
+   "date": "2026-04-06",
+   "amount": 1321,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0244",
+   "date": "2026-04-02",
+   "amount": 427,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0245",
+   "date": "2026-04-26",
+   "amount": 195,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0246",
+   "date": "2026-04-13",
+   "amount": 656,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0247",
+   "date": "2026-04-22",
+   "amount": 1072,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0248",
+   "date": "2026-04-14",
+   "amount": 4062,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0249",
+   "date": "2026-04-15",
+   "amount": 1877,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "card",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0250",
+   "date": "2026-04-18",
+   "amount": 946,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "card",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0251",
+   "date": "2026-04-05",
+   "amount": 665,
+   "merchant": "StreamingBundle",
+   "category": "subscription",
+   "channel": "card",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0252",
+   "date": "2026-04-09",
+   "amount": 2643,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0253",
+   "date": "2026-04-20",
+   "amount": 2271,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "UPI",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0254",
+   "date": "2026-04-24",
+   "amount": 5060,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "card",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0255",
+   "date": "2026-04-06",
+   "amount": 347,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0256",
+   "date": "2026-04-05",
+   "amount": 445,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0257",
+   "date": "2026-04-24",
+   "amount": 875,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "card",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0258",
+   "date": "2026-05-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0259",
+   "date": "2026-05-16",
+   "amount": 906,
+   "merchant": "StreamingBundle",
+   "category": "subscription",
+   "channel": "UPI",
+   "time": "15:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0260",
+   "date": "2026-05-20",
+   "amount": 2730,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0261",
+   "date": "2026-05-19",
+   "amount": 869,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0262",
+   "date": "2026-05-07",
+   "amount": 1076,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "card",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0263",
+   "date": "2026-05-16",
+   "amount": 4502,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "card",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0264",
+   "date": "2026-05-02",
+   "amount": 504,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0265",
+   "date": "2026-05-09",
+   "amount": 2915,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0266",
+   "date": "2026-05-20",
+   "amount": 841,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0267",
+   "date": "2026-05-20",
+   "amount": 397,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0268",
+   "date": "2026-05-25",
+   "amount": 572,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0269",
+   "date": "2026-05-06",
+   "amount": 930,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0270",
+   "date": "2026-05-06",
+   "amount": 834,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "15:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0271",
+   "date": "2026-05-28",
+   "amount": 3440,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0272",
+   "date": "2026-05-23",
+   "amount": 130,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "10:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0273",
+   "date": "2026-06-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0274",
+   "date": "2026-06-27",
+   "amount": 2193,
+   "merchant": "ApparelCo",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0275",
+   "date": "2026-06-05",
+   "amount": 692,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0276",
+   "date": "2026-06-03",
+   "amount": 695,
+   "merchant": "StreamingBundle",
+   "category": "subscription",
+   "channel": "UPI",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0277",
+   "date": "2026-06-25",
+   "amount": 596,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "15:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0278",
+   "date": "2026-06-18",
+   "amount": 895,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0279",
+   "date": "2026-06-17",
+   "amount": 4533,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "card",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0280",
+   "date": "2026-06-25",
+   "amount": 704,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0281",
+   "date": "2026-06-06",
+   "amount": 349,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0282",
+   "date": "2026-06-18",
+   "amount": 365,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0283",
+   "date": "2026-06-10",
+   "amount": 1134,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "card",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0284",
+   "date": "2026-06-22",
+   "amount": 503,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "card",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0285",
+   "date": "2026-06-16",
+   "amount": 1412,
+   "merchant": "ApparelCo",
+   "category": "shopping",
+   "channel": "card",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0286",
+   "date": "2026-06-17",
+   "amount": 883,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0287",
+   "date": "2026-06-16",
+   "amount": 1245,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "UPI",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0288",
+   "date": "2026-06-02",
+   "amount": 2068,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0289",
+   "date": "2026-07-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0290",
+   "date": "2026-07-06",
+   "amount": 707,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0291",
+   "date": "2026-07-03",
+   "amount": 1350,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0292",
+   "date": "2026-07-03",
+   "amount": 645,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0293",
+   "date": "2026-07-20",
+   "amount": 1656,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0294",
+   "date": "2026-07-25",
+   "amount": 673,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0295",
+   "date": "2026-07-09",
+   "amount": 3610,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0296",
+   "date": "2026-07-21",
+   "amount": 6377,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0297",
+   "date": "2026-07-20",
+   "amount": 154,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "card",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0298",
+   "date": "2026-07-07",
+   "amount": 1063,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0299",
+   "date": "2026-07-09",
+   "amount": 326,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0300",
+   "date": "2026-07-10",
+   "amount": 1815,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0301",
+   "date": "2026-07-03",
+   "amount": 219,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0302",
+   "date": "2026-07-13",
+   "amount": 1010,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0303",
+   "date": "2026-07-25",
+   "amount": 1527,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "card",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0304",
+   "date": "2026-07-20",
+   "amount": 5935,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0305",
+   "date": "2026-07-08",
+   "amount": 249,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "15:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0306",
+   "date": "2026-07-21",
+   "amount": 738,
+   "merchant": "StreamingBundle",
+   "category": "subscription",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0307",
+   "date": "2026-07-21",
+   "amount": 795,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "card",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0308",
+   "date": "2026-07-21",
+   "amount": 558,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0309",
+   "date": "2026-08-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0310",
+   "date": "2026-08-15",
+   "amount": 986,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0311",
+   "date": "2026-08-26",
+   "amount": 523,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "card",
+   "time": "16:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0312",
+   "date": "2026-08-01",
+   "amount": 2563,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "13:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0313",
+   "date": "2026-08-13",
+   "amount": 1002,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0314",
+   "date": "2026-08-03",
+   "amount": 1958,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0315",
+   "date": "2026-08-12",
+   "amount": 2321,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0316",
+   "date": "2026-08-12",
+   "amount": 2554,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0317",
+   "date": "2026-08-22",
+   "amount": 1511,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0318",
+   "date": "2026-08-18",
+   "amount": 2662,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0319",
+   "date": "2026-08-07",
+   "amount": 1295,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "UPI",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0320",
+   "date": "2026-08-02",
+   "amount": 575,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0321",
+   "date": "2026-08-07",
+   "amount": 484,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0322",
+   "date": "2026-08-10",
+   "amount": 427,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0323",
+   "date": "2026-08-05",
+   "amount": 6362,
+   "merchant": "Family pharmacy",
+   "category": "family_health",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0324",
+   "date": "2026-08-14",
+   "amount": 705,
+   "merchant": "StreamingBundle",
+   "category": "subscription",
+   "channel": "UPI",
+   "time": "08:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0325",
+   "date": "2026-08-27",
+   "amount": 1680,
+   "merchant": "MarketPlace",
+   "category": "shopping",
+   "channel": "UPI",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0326",
+   "date": "2026-08-26",
+   "amount": 224,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "card",
+   "time": "17:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0327",
+   "date": "2026-09-15",
+   "amount": 42000,
+   "merchant": "Guest_36 operations",
+   "category": "income",
+   "channel": "bank",
+   "time": "10:00",
+   "note": "monthly aggregate"
+  },
+  {
+   "id": "txn_0328",
+   "date": "2026-09-28",
+   "amount": 238,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "21:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0329",
+   "date": "2026-09-10",
+   "amount": 564,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0330",
+   "date": "2026-09-18",
+   "amount": 3652,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "23:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0331",
+   "date": "2026-09-28",
+   "amount": 638,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0332",
+   "date": "2026-09-03",
+   "amount": 2304,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "19:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0333",
+   "date": "2026-09-28",
+   "amount": 739,
+   "merchant": "FuelCo",
+   "category": "transport",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0334",
+   "date": "2026-09-14",
+   "amount": 243,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0335",
+   "date": "2026-09-26",
+   "amount": 7067,
+   "merchant": "Hostel maintenance",
+   "category": "hostel_ops",
+   "channel": "UPI",
+   "time": "15:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0336",
+   "date": "2026-09-26",
+   "amount": 589,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "14:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0337",
+   "date": "2026-09-27",
+   "amount": 1843,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0338",
+   "date": "2026-09-19",
+   "amount": 1653,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0339",
+   "date": "2026-09-23",
+   "amount": 531,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "12:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0340",
+   "date": "2026-09-12",
+   "amount": 2779,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "card",
+   "time": "18:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0341",
+   "date": "2026-09-03",
+   "amount": 551,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0342",
+   "date": "2026-09-16",
+   "amount": 593,
+   "merchant": "MiscVendor",
+   "category": "misc",
+   "channel": "UPI",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0343",
+   "date": "2026-09-03",
+   "amount": 646,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "card",
+   "time": "22:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0344",
+   "date": "2026-09-28",
+   "amount": 8173,
+   "merchant": "GroceryCo",
+   "category": "essentials",
+   "channel": "UPI",
+   "time": "09:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0345",
+   "date": "2026-09-26",
+   "amount": 414,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "20:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0346",
+   "date": "2026-09-08",
+   "amount": 665,
+   "merchant": "RechargeCo",
+   "category": "utilities",
+   "channel": "card",
+   "time": "11:00",
+   "note": ""
+  },
+  {
+   "id": "txn_0347",
+   "date": "2026-09-24",
+   "amount": 597,
+   "merchant": "FoodDeliveryCo",
+   "category": "food_delivery",
+   "channel": "UPI",
+   "time": "11:00",
+   "note": ""
+  }
+ ]
+}

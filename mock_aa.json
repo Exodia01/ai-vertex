@@ -1,0 +1,42 @@
+{
+  "persona_id": "persona_hostel_tier2",
+  "as_of": "2026-09-26",
+  "accounts": {
+    "savings": { "bank": "FixtureBank A", "balance": 420000, "note": "3mo emergency ~270000, surplus ~150000" },
+    "fd": { "balance": 600000, "rate": "7.1%" },
+    "mf": { "balance": 1200000, "xirr": "11.8%", "note": "Flexi + Index" },
+    "hostel_inflow_avg": 205000
+  },
+  "income_pattern": "seasonal",
+  "summary_3mo": {
+    "inflow_total": 615000,
+    "spend_total": 402000,
+    "essential": 261000,
+    "random_leak": 66000,
+    "joy": 12000,
+    "top_leaks": [
+      { "merchant": "FoodDeliveryCo/ZomatoCo", "total": 18200, "count": 23 },
+      { "merchant": "MarketPlace impulse", "total": 14800, "count": 9 },
+      { "merchant": "Subscriptions", "total": 5400, "count": 12 }
+    ],
+    "travel_spend": 0,
+    "signals": ["Travel aggregator search 22-Sep", "No lounge card", "Seasonal dip risk: occupancy 55%"]
+  },
+  "transactions": [
+    { "id": "txn_001", "date": "2026-09-24", "amount": 499, "merchant": "FoodDeliveryCo", "category": "food_delivery", "channel": "UPI", "time": "21:40", "note": "3rd order this week" },
+    { "id": "txn_002", "date": "2026-09-23", "amount": 899, "merchant": "MarketPlace", "category": "shopping", "channel": "card", "time": "23:15", "note": "late night impulse" },
+    { "id": "txn_003", "date": "2026-09-22", "amount": 0, "merchant": "TravelSearch", "category": "travel_intent", "channel": "app", "time": "20:10", "note": "family trip Dec search, no booking" },
+    { "id": "txn_004", "date": "2026-07-05", "amount": 212000, "merchant": "Hostel July total", "category": "income", "channel": "UPI", "time": "10:00", "note": "monthly aggregate inflow" },
+    { "id": "txn_005", "date": "2026-09-18", "amount": 649, "merchant": "FoodDeliveryCo", "category": "food_delivery", "channel": "UPI", "time": "13:20", "note": "" },
+    { "id": "txn_006", "date": "2026-09-28", "amount": 205000, "merchant": "Hostel September total", "category": "income", "channel": "UPI", "time": "11:00", "note": "monthly aggregate inflow" },
+    { "id": "txn_007", "date": "2026-09-12", "amount": 1299, "merchant": "StreamingBundle x3", "category": "subscription", "channel": "card", "time": "09:00", "note": "stacked" },
+    { "id": "txn_008", "date": "2026-09-10", "amount": 8500, "merchant": "Hostel maintenance - plumbing", "category": "hostel_ops", "note": "essential ops", "channel": "UPI", "time": "10:00" },
+    { "id": "txn_009", "date": "2026-09-08", "amount": 720, "merchant": "FoodDeliveryCo", "category": "food_delivery", "channel": "UPI", "time": "22:05", "note": "" },
+    { "id": "txn_010", "date": "2026-09-05", "amount": 4200, "merchant": "Family pharmacy", "category": "family_health", "channel": "card", "time": "17:30", "note": "recurring" },
+    { "id": "txn_011", "date": "2026-08-28", "amount": 198000, "merchant": "Hostel August total", "category": "income", "channel": "bank", "time": "10:00", "note": "monthly aggregate inflow" },
+    { "id": "txn_012", "date": "2026-08-25", "amount": 1499, "merchant": "MarketPlace", "category": "shopping", "channel": "card", "time": "22:50", "note": "impulse" },
+    { "id": "txn_013", "date": "2026-08-20", "amount": 780, "merchant": "FoodDeliveryCo", "category": "food_delivery", "channel": "UPI", "time": "20:30", "note": "" },
+    { "id": "txn_014", "date": "2026-08-15", "amount": 15000, "merchant": "MF SIP", "category": "investment", "channel": "auto", "time": "09:00", "note": "continue" },
+    { "id": "txn_015", "date": "2026-05-12", "amount": 110000, "merchant": "Hostel May total", "category": "income", "channel": "bank", "time": "10:00", "note": "seasonal dip 55% occupancy - proof of seasonal risk" }
+  ]
+}

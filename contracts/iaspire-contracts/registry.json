@@ -1,0 +1,62 @@
+{
+  "registry": "iaspire-contracts",
+  "versioning_policy": {
+    "strategy": "additive_fields_only_within_major",
+    "deprecation_window": "producer_and_consumer_must_support_N_and_N_minus_1",
+    "minimum_window": "one full sprint cycle",
+    "breaking_change": "bump major; both sides support N and N-1 during window"
+  },
+  "pinned_version": "v1.1",
+  "consumers": {
+    "STABILIZED_JOURNAL_STATE": {
+      "produced_by": "anchor_1",
+      "consumed_by": ["anchor_2"],
+      "current": "v1.1",
+      "supported": ["v1", "v1.1"],
+      "note": "v1.1 is additive (coarse_sentiment_band, confidence_band). v1 consumers ignore the new fields safely."
+    },
+    "CUSTOMER_SEGMENT_INSIGHT": {
+      "produced_by": "anchor_2",
+      "consumed_by": ["anchor_3"],
+      "current": "v1",
+      "supported": ["v1"]
+    },
+    "POLICY_PROPOSAL": {
+      "produced_by": "anchor_3",
+      "consumed_by": ["anchor_4"],
+      "current": "v1",
+      "supported": ["v1"]
+    },
+    "VALIDATED_POLICY_DECISION": {
+      "produced_by": "anchor_4",
+      "consumed_by": ["anchor_3"],
+      "current": "v1",
+      "supported": ["v1"]
+    },
+    "IDENTITY_CONSENT_ENVELOPE": {
+      "produced_by": "anchor_1",
+      "consumed_by": ["anchor_2"],
+      "current": "v1",
+      "supported": ["v1"]
+    },
+    "AUDIT_EVENT_ENVELOPE": {
+      "produced_by": ["anchor_1", "anchor_2", "anchor_3", "anchor_4"],
+      "consumed_by": ["anchor_1", "anchor_2", "anchor_3", "anchor_4"],
+      "current": "v1",
+      "supported": ["v1"]
+    }
+  },
+  "boundary_rules": {
+    "only_stabilized_journal_state_crosses_anchor_1": true,
+    "excluded_from_every_emitted_event": [
+      "raw transaction data",
+      "account numbers",
+      "exact income",
+      "free-text aspiration content",
+      "name/contact details",
+      "raw sentiment text",
+      "per-message stress scores",
+      "contradiction_note content"
+    ]
+  }
+}

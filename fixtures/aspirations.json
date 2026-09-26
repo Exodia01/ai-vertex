@@ -1,0 +1,31 @@
+{
+  "fixture": "aspirations_labeled",
+  "purpose": "J4 labeled fixture set. Drives the accuracy threshold and the ambiguous/contradictory unit tests named in Anchor 1 J4.",
+  "expected_confidence_floor": 0.6,
+  "cases": [
+    { "id": "asp_fx_01", "text": "Japan next year 2.5L", "label": "travel", "bucket": "clear", "amount": 250000, "horizon_mo": 12 },
+    { "id": "asp_fx_02", "text": "Dubai family trip 1.2L in 3 months", "label": "travel", "bucket": "clear", "amount": 120000, "horizon_mo": 3 },
+    { "id": "asp_fx_03", "text": "I want to buy a 15L car", "label": "asset", "bucket": "clear", "amount": 1500000, "horizon_mo": 12 },
+    { "id": "asp_fx_04", "text": "Need 25L for a house down payment", "label": "asset", "bucket": "clear", "amount": 2500000, "horizon_mo": 12 },
+    { "id": "asp_fx_05", "text": "I want to protect my parents from medical expenses", "label": "protection", "bucket": "clear", "amount": null, "horizon_mo": 12, "note": "J4 named demo: objective is healthcare protection, not savings" },
+    { "id": "asp_fx_06", "text": "3L for medical emergencies", "label": "protection", "bucket": "clear", "amount": 300000, "horizon_mo": 12 },
+    { "id": "asp_fx_07", "text": "save 2L", "label": "liquidity", "bucket": "clear", "amount": 200000, "horizon_mo": 12 },
+    { "id": "asp_fx_08", "text": "I want my salary to grow, start a SIP", "label": "wealth", "bucket": "clear", "amount": null, "horizon_mo": 12 },
+    { "id": "asp_fx_09", "text": "I want to close my loan early", "label": "debt", "bucket": "clear", "amount": null, "horizon_mo": 12 },
+    { "id": "asp_fx_10", "text": "EMI is too much, want to reduce my debt", "label": "debt", "bucket": "clear", "amount": null, "horizon_mo": 12 },
+
+    { "id": "asp_fx_11", "text": "hmm paisa chahiye", "label": "unknown", "bucket": "ambiguous", "expect_clarify": true, "amount": null },
+    { "id": "asp_fx_12", "text": "someday something big", "label": "unknown", "bucket": "ambiguous", "expect_clarify": true, "amount": null },
+    { "id": "asp_fx_13", "text": "better hoga agar...", "label": "unknown", "bucket": "ambiguous", "expect_clarify": true, "amount": null },
+
+    { "id": "asp_fx_14", "text": "I want to save 3L for my car so I can buy a 15L car next year", "label": "asset", "bucket": "clear", "amount": 300000, "horizon_mo": 12, "note": "relabelled: this is one coherent asset goal with a savings mechanism, not a contradiction" },
+    { "id": "asp_fx_17", "text": "I want to buy a house but also pay off my car loan", "label": null, "bucket": "contradictory", "expect_clarify": true, "contradiction": "asset vs debt, equal strength, no stated mechanism", "amount": null },
+    { "id": "asp_fx_15", "text": "I need 2L for my mother's surgery but I also want to take a 3L holiday", "label": null, "bucket": "contradictory", "expect_clarify": true, "contradiction": "protection vs travel on the same cash in the same sentence", "amount": null },
+    { "id": "asp_fx_16", "text": "pay off my 5L loan by buying a 8L car", "label": null, "bucket": "contradictory", "expect_clarify": true, "contradiction": "debt vs asset in direct conflict", "amount": null }
+  ],
+  "stated_mechanism_cases": [
+    { "id": "asm_fx_01", "text": "I want to save 3L for medical emergencies", "expect_objective": "protection", "expect_stated": "savings", "expect_primary_mechanism": "liquid reserve", "note": "J8 wrong-construct path: save-only must be challenged" },
+    { "id": "asm_fx_02", "text": "I will buy a 15L car on EMI", "expect_objective": "asset", "expect_stated": "loan", "expect_primary_mechanism": "EMI" },
+    { "id": "asm_fx_03", "text": "3L for medical emergencies", "expect_objective": "protection", "expect_stated": null, "expect_primary_mechanism": "insurance+reserve" }
+  ]
+}

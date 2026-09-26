@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# runtime data
+memory.jsonl
+memory_test.jsonl

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "iaspire-contracts/audit_event_envelope/v1",
+  "title": "Audit Event Envelope",
+  "description": "Shared audit event envelope used by all four anchors (Master §3.6, Anchor 1 §17).",
+  "type": "object",
+  "required": ["actor", "action", "evidence_ref", "timestamp", "trace_id"],
+  "additionalProperties": false,
+  "properties": {
+    "actor": {
+      "description": "Who performed the action. Anchors may extend with a role suffix.",
+      "type": "string",
+      "pattern": "^(customer|ai|deterministic_engine|human_auditor|anchor[1-4])(\\.[a-z_]+)?$"
+    },
+    "action": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*(\\.[a-z0-9_]+)*$"
+    },
+    "evidence_ref": {
+      "description": "Pointer to the record that justifies this action. Never inline payload.",
+      "type": ["string", "array"],
+      "items": { "type": "string" }
+    },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "trace_id": { "type": "string", "minLength": 8, "maxLength": 64 },
+    "anchor": { "type": "integer", "minimum": 1, "maximum": 4 },
+    "contract_version": { "type": "string", "pattern": "^v[0-9]+(\\.[0-9]+)?$" }
+  }
+}

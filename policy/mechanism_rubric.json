@@ -1,0 +1,39 @@
+{
+  "rubric_id": "mechanism_rubric",
+  "version": "v1",
+  "purpose": "Anchor 1 J5 DoD requires candidate generation to be 'validated by rubric, not just present'. Each rule asserts that a clinically/financially sensible mechanism is proposed for an objective, and where relevant that an unsuitable one is not.",
+  "rules": [
+    { "id": "rub_protection", "objective": "protection",
+      "probe_text": "I want to protect my parents from medical expenses",
+      "must_include_any": ["insurance+reserve"],
+      "why": "Acute medical risk cannot be carried by savings alone; a reserve is a supplement, not a substitute." },
+
+    { "id": "rub_liquidity", "objective": "liquidity",
+      "probe_text": "save 2L for an emergency fund",
+      "must_include_any": ["liquid reserve"],
+      "must_exclude": "insurance+reserve",
+      "why": "A cash buffer needs liquidity, not a long-dated contract. Insurance is not a savings account." },
+
+    { "id": "rub_travel", "objective": "travel",
+      "probe_text": "Japan trip 2.5L next year",
+      "must_include_any": ["savings goal"],
+      "must_exclude": "auto loan",
+      "why": "A dated, sized goal is funded by a dedicated savings pot, not by borrowing." },
+
+    { "id": "rub_debt", "objective": "debt",
+      "probe_text": "I want to close my loan early",
+      "must_include_any": ["refinance/repay"],
+      "must_exclude": "investment allocation",
+      "why": "Paying down expensive debt dominates any investment return available at comparable risk." },
+
+    { "id": "rub_wealth", "objective": "wealth",
+      "probe_text": "I want my savings to grow, start a SIP",
+      "must_include_any": ["investment allocation"],
+      "why": "Wealth creation is an allocation problem, not a liquidity or protection one." },
+
+    { "id": "rub_asset", "objective": "asset",
+      "probe_text": "I want to buy a 15L car",
+      "must_include_any": ["EMI", "cash purchase", "auto loan"],
+      "why": "A vehicle purchase legitimately admits both a cash and a financed construct, so the rubric requires a financed option be offered rather than forcing savings." }
+  ]
+}

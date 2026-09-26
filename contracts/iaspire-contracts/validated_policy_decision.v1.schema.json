@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "iaspire-contracts/validated_policy_decision/v1",
+  "title": "VALIDATED_POLICY_DECISION v1",
+  "description": "Anchor 4 -> Anchor 3 (Anchor 4 §10). Never a fabricated consensus: dissent is a first-class field.",
+  "type": "object",
+  "required": ["policy_id", "decision", "rationale", "agent_positions_summary", "dissent_record", "confidence", "contract_version"],
+  "additionalProperties": true,
+  "properties": {
+    "policy_id": { "type": "string", "pattern": "^pol_[a-z0-9_]{4,32}$" },
+    "decision": {
+      "type": "string",
+      "enum": ["approve", "escalate", "return_for_evidence"]
+    },
+    "rationale": { "type": "string", "minLength": 1 },
+    "agent_positions_summary": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["agent", "stance"],
+        "properties": {
+          "agent": { "type": "string" },
+          "stance": { "type": "string", "enum": ["support", "object", "insufficient_evidence"] },
+          "rationale": { "type": "string" }
+        }
+      }
+    },
+    "dissent_record": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["agent", "position"],
+        "properties": {
+          "agent": { "type": "string" },
+          "position": { "type": "string" },
+          "minority_view_preserved": { "type": "boolean" }
+        }
+      }
+    },
+    "confidence": { "type": "string", "enum": ["low", "moderate", "high"] },
+    "conditions": { "type": "array", "items": { "type": "string" } },
+    "monitoring_metrics": { "type": "array", "items": { "type": "string" } },
+    "expiry_review_date": { "type": ["string", "null"], "format": "date-time" },
+    "contract_version": { "type": "string", "pattern": "^v[0-9]+(\\.[0-9]+)?$" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "decision": { "const": "escalate" } }, "required": ["decision"] },
+      "then": { "required": ["conditions"] }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+[
+ {
+  "persona_id": "persona_hostel_tier2",
+  "label": "Guest_44",
+  "band": "mid",
+  "risk": "moderate",
+  "months": 18,
+  "transactions": 346,
+  "edge_case": "off-season dip to ~110k; peak ~240k"
+ },
+ {
+  "persona_id": "persona_gig_irregular",
+  "label": "Guest_28",
+  "band": "low",
+  "risk": "high",
+  "months": 18,
+  "transactions": 356,
+  "edge_case": "J2 named case: irregular-income smoothing"
+ },
+ {
+  "persona_id": "persona_zero_savings",
+  "label": "Guest_52",
+  "band": "mid",
+  "risk": "high",
+  "months": 18,
+  "transactions": 347,
+  "edge_case": "J6 named case: zero savings"
+ },
+ {
+  "persona_id": "persona_negative_cashflow",
+  "label": "Guest_36",
+  "band": "low",
+  "risk": "high",
+  "months": 18,
+  "transactions": 347,
+  "edge_case": "J6 named case: negative cash flow (spend exceeds income)"
+ },
+ {
+  "persona_id": "persona_windfall",
+  "label": "Guest_41",
+  "band": "high",
+  "risk": "low",
+  "months": 18,
+  "transactions": 348,
+  "edge_case": "J6 named case: sudden windfall (inheritance credit)"
+ },
+ {
+  "persona_id": "persona_debt_spiral",
+  "label": "Guest_31",
+  "band": "low",
+  "risk": "high",
+  "months": 18,
+  "transactions": 319,
+  "edge_case": "Master \u00a74 edge case: debt spiral"
+ }
+]

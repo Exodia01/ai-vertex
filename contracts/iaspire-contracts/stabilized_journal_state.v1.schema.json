@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "iaspire-contracts/stabilized_journal_state/v1",
+  "title": "STABILIZED_JOURNAL_STATE v1",
+  "description": "Anchor 1 -> Anchor 2 (Anchor 1 §21). Bucketed/coarse only.",
+  "type": "object",
+  "required": [
+    "customer_ref",
+    "objective_category",
+    "mechanism_category",
+    "feasibility_outcome",
+    "coarse_target_band",
+    "coarse_timeline_band",
+    "confirmed_at",
+    "state_version"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "customer_ref": {
+      "description": "Opaque, non-reversible outside Anchor 1. Never a name, contact, or account id.",
+      "type": "string",
+      "pattern": "^cust_[a-z0-9_]{4,32}$"
+    },
+    "objective_category": {
+      "type": "string",
+      "enum": ["travel", "asset", "protection", "liquidity", "wealth", "debt"]
+    },
+    "mechanism_category": {
+      "type": "string",
+      "enum": [
+        "savings_goal",
+        "insurance_reserve",
+        "liquid_reserve",
+        "investment_allocation",
+        "auto_loan",
+        "emi",
+        "cash_purchase",
+        "downpayment_mortgage",
+        "refinance_repay"
+      ]
+    },
+    "feasibility_outcome": { "type": "string", "enum": ["feasible", "gap", "at-risk"] },
+    "coarse_target_band": { "type": "string", "pattern": "^(0-1\\.5L|1\\.5-5L|>5L)$" },
+    "coarse_timeline_band": { "type": "string", "pattern": "^(0-3mo|3-12mo|>12mo)$" },
+    "confirmed_at": { "type": "string", "format": "date-time" },
+    "state_version": { "type": "string", "pattern": "^v[0-9]+(\\.[0-9]+)?$" }
+  }
+}

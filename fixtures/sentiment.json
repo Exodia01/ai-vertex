@@ -1,0 +1,57 @@
+{
+  "fixture": "sentiment_labeled",
+  "purpose": "J11 labeled fixture set. Paired same-objective aspirations at different stress/urgency/confidence, plus the explicit-accept-vs-repeated-anxiety contradiction case (Master §4, Anchor 1 J11).",
+  "expected_confidence_floor": 0.6,
+  "pairs": [
+    { "id": "pair_travel",
+      "calm":    { "text": "I'd like to take a family trip next year, nothing urgent.", "expect": { "stress": "low", "confidence": "high" } },
+      "urgent":  { "text": "I urgently need to book a family trip, prices are going up tomorrow.", "expect": { "stress": "high", "urgency": "high", "confidence": "high" } },
+      "anxious": { "text": "I'm scared we can't afford it, I keep worrying about the money.", "expect": { "stress": "high", "frustration": "medium" } },
+      "unsure":  { "text": "Maybe a trip, I don't know, let's see.", "expect": { "stress": "low", "confidence": "low" } } },
+
+    { "id": "pair_medical",
+      "calm":    { "text": "I'd like to set aside some money for medical needs.", "expect": { "stress": "low", "confidence": "high" } },
+      "urgent":  { "text": "My parent needs treatment now, I need the money immediately.", "expect": { "stress": "high", "urgency": "high" } },
+      "anxious": { "text": "What if it happens again? I cannot sleep thinking about it.", "expect": { "stress": "high", "frustration": "medium" } },
+      "unsure":  { "text": "Maybe I'll do something about health later.", "expect": { "stress": "low", "confidence": "low" } } },
+
+    { "id": "pair_debt",
+      "calm":    { "text": "I'd like to bring down my loan over time.", "expect": { "stress": "low", "confidence": "high" } },
+      "urgent":  { "text": "I must clear my EMI this month or I lose the house.", "expect": { "stress": "high", "urgency": "high" } },
+      "anxious": { "text": "Every month I see the balance and I feel sick.", "expect": { "stress": "high", "frustration": "medium" } },
+      "unsure":  { "text": "Loan is fine, not thinking about it.", "expect": { "stress": "low", "confidence": "low" } } }
+  ],
+  "contradiction_cases": [
+    { "id": "contradiction_01",
+      "sequence": [
+        { "role": "aspiration", "text": "I'll save 3L for medical emergencies, I know I should.", "sentiment": { "stress": "low", "confidence": "high" } },
+        { "role": "response", "text": "Actually I accept it, let's do it.", "sentiment": { "stress": "low", "confidence": "high" } },
+        { "role": "aspiration", "text": "Honestly I'm still terrified we won't manage.", "sentiment": { "stress": "high" } }
+      ],
+      "expect": {
+        "stabilizes": true,
+        "contradiction_note": true,
+        "follow_up_scheduled": true,
+        "note": "Explicit accept wins. J8 must stabilize and annotate, never block." }
+    },
+    { "id": "contradiction_02",
+      "sequence": [
+        { "role": "aspiration", "text": "Japan trip 2.5L, I'm going for it.", "sentiment": { "stress": "low", "confidence": "high" } },
+        { "role": "response", "text": "Fine, accept.", "sentiment": { "stress": "low", "confidence": "high" } },
+        { "role": "aspiration", "text": "I don't think I can do this, I keep panicking.", "sentiment": { "stress": "high" } },
+        { "role": "aspiration", "text": "Still thinking about it, I'm quite stressed.", "sentiment": { "stress": "high" } }
+      ],
+      "expect": {
+        "stabilizes": true,
+        "contradiction_note": true,
+        "follow_up_scheduled": true,
+        "note": "Repeated high-stress signals against an accepted goal." }
+    }
+  ],
+  "tone_effects": {
+    "high_stress":   { "j7": "soften_tone", "j10": "priority_raised", "j8": "contradiction_check" },
+    "high_confidence":{ "j7": "allow_direct_actionable_phrasing" },
+    "absent_signal": { "j7": "default_tone", "j8": "no_note", "j10": "no_priority" }
+  },
+  "boundary_rule": "Only coarse_sentiment_band / confidence_band may cross to Anchor 2. Raw text, evidence_snippet and per-message scores must never."
+}

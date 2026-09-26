@@ -1,0 +1,63 @@
+{
+  "policy_id": "feasibility_policy",
+  "version": "v1",
+  "purpose": "Every numeric threshold used by the deterministic feasibility engine (J6). Kept out of code so it is reviewable, diffable and owned by policy rather than by a developer.",
+  "provenance": {
+    "status": "PROVISIONAL",
+    "note": "The anchor specifications do NOT source these numbers. They are engineering defaults chosen to be conservative and are marked provisional so that an actuarial/product owner can replace them without touching J6. Every FeasibilityResult echoes the policy version and the thresholds actually used, so historical results stay interpretable if the policy changes.",
+    "owner": "unassigned - needs a named product/actuarial owner",
+    "review_by": "before any production or regulated use"
+  },
+  "thresholds": {
+    "max_savings_rate": {
+      "value": 0.40,
+      "unit": "fraction_of_monthly_income",
+      "rationale": "Caps how much of net monthly income may be committed to a single new goal, leaving headroom for irregular months. 40% is deliberately conservative; a higher ratio makes goals look feasible that fail in a bad month.",
+      "provisional": true
+    },
+    "emergency_months_required": {
+      "value": 4,
+      "unit": "months",
+      "rationale": "Minimum liquid runway before a new goal may be considered feasible. Below 4 months a new commitment converts a shock into a crisis.",
+      "provisional": true
+    },
+    "emergency_basis_months": {
+      "value": 6,
+      "unit": "months",
+      "rationale": "Denominator convention for converting an emergency corpus into a runway figure. Conventional 6-month guidance.",
+      "provisional": true
+    },
+    "seasonal_stress_ratio": {
+      "value": 0.75,
+      "unit": "ratio_of_worst_month_to_average",
+      "rationale": "When the worst observed month is below this fraction of the average, the goal is additionally stress-tested against the worst month rather than the average. Prevents seasonal and irregular earners from being approved against a flattering mean.",
+      "provisional": true
+    },
+    "income_smoothing_window_months": {
+      "value": 12,
+      "unit": "months",
+      "rationale": "Trailing window for income aggregation. 12 months captures at least one full seasonal cycle; a 3-month window hides off-season collapse.",
+      "provisional": true
+    },
+    "debt_service_ceiling": {
+      "value": 0.35,
+      "unit": "fraction_of_monthly_income",
+      "rationale": "Total debt service above this share of income marks a debt-spiral profile and blocks new commitments regardless of apparent savings capacity.",
+      "provisional": true
+    },
+    "debt_to_income_spiral_ratio": {
+      "value": 6.0,
+      "unit": "months_of_income_owed",
+      "rationale": "Outstanding debt above this multiple of monthly income marks a debt-spiral profile. Chosen over an interest-rate proxy because a long-tenor loan carries a low monthly payment while still being structurally unaffordable - the monthly-service test alone approved the debt-spiral persona in testing.",
+      "provisional": true
+    }
+  },
+  "mechanism_rules": {
+    "protection_requires_insurance": {
+      "value": true,
+      "rationale": "A pure savings reserve cannot absorb a large acute medical shock. If the customer's stated mechanism for a protection objective is savings-only, the construct is judged wrong-construct and challenged, even when a feasible alternative exists.",
+      "provisional": false,
+      "source": "Anchor 1 §4 Challenge definition; J7 healthcare-reserve demo scenario"
+    }
+  }
+}
